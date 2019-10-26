@@ -11,9 +11,11 @@ namespace LongRunningTest
             //TPL - Task based asynchrionous pattern
             var task0 = new SatData.LongRunningCpuProcessAsync().Process("task0", 120);
 
-            var salesRecordFile = @"C:\MyTestPrograms\1500000 Sales Records.csv";
+            // var salesRecordFile = @"C:\MyTestPrograms\1500000 Sales Records.csv";
+            //var fileName = @"C:\MyTestPrograms\2012_sat_results.csv";
 
-            var fileName = @"C:\MyTestPrograms\2012_sat_results.csv";
+            var salesRecordFile = @".\Data\1500000 Sales Records.csv";
+            var fileName = @".\Data\2012_sat_results.csv";
 
             Task<List<SatData.SatDao>> task1 = new SatData.SatQueryRepository(fileName).ReadFileAsync("task1");
             Task<List<SatData.SatDao>> task2 = new SatData.SatQueryRepository(fileName).ReadFileAsync("task2");
