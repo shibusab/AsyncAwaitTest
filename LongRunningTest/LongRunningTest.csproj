@@ -6,9 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Data\1500000 Sales Records.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Data\2012_sat_results.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
